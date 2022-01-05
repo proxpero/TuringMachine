@@ -1,0 +1,24 @@
+{
+  "blank" : "#",
+  "description" : "Converts a sequence of a's to a binary number.",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 R",
+    "2 L",
+    "3 L",
+    "4 R",
+    "5 Y"
+  ],
+  "title" : "Unary-to-Binary Converter (faster version)",
+  "transitions" : [
+    "0 1 a X",
+    "0 2 # #",
+    "1 0 a a",
+    "1 3 # #",
+    "2 4 # 0",
+    "3 4 # 1",
+    "4 1 a X",
+    "4 5 # #"
+  ]
+}

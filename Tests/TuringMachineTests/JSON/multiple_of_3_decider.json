@@ -1,0 +1,22 @@
+{
+  "blank" : "#",
+  "description" : "Accepts all binary numbers that are multiples of 3",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 R",
+    "2 R",
+    "3 Y",
+    "4 N"
+  ],
+  "title" : "Multiple of 3 Decider",
+  "transitions" : [
+    "0 1 1 1",
+    "0 3 # #",
+    "1 0 1 1",
+    "1 2 0 0",
+    "1 4 # #",
+    "2 1 0 0",
+    "2 4 # #"
+  ]
+}

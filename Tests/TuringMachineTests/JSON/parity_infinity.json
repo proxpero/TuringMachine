@@ -1,0 +1,22 @@
+{
+  "blank" : "#",
+  "description" : "Halts if input contains an odd number of a's.  Goes into an infinite loop for an even number of a's",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 R",
+    "2 L",
+    "3 L",
+    "4 Y"
+  ],
+  "title" : "Parity-Infinity",
+  "transitions" : [
+    "0 1 a b",
+    "0 2 # #",
+    "1 0 a b",
+    "1 4 # #",
+    "2 0 # #",
+    "2 3 b a",
+    "3 2 b a"
+  ]
+}

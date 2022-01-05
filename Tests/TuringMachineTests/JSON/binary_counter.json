@@ -1,0 +1,16 @@
+{
+  "blank" : "#",
+  "description" : "A binary counter which writes each new number over the previous one.",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 L"
+  ],
+  "title" : "Binary Counter",
+  "transitions" : [
+    "0 1 # #",
+    "1 0 # 1",
+    "1 0 0 1",
+    "1 1 1 0"
+  ]
+}

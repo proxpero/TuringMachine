@@ -1,0 +1,26 @@
+{
+  "blank" : "#",
+  "description" : "Given a string of 2^n -1 0's, produces a sequence of L's and R's corresponding to the dragon curve of length 2^n - 1. Rejects input if the number of 0's is not a power of 2, minus 1,",
+  "start" : 0,
+  "states" : [
+    "0 L",
+    "1 R",
+    "2 R",
+    "3 R",
+    "4 R",
+    "5 Y",
+    "6 N"
+  ],
+  "title" : "Dragon Curve",
+  "transitions" : [
+    "0 1 # #",
+    "1 2 0 L",
+    "1 6 # #",
+    "2 3 0 0",
+    "2 5 # #",
+    "3 4 0 R",
+    "3 6 # #",
+    "4 0 # #",
+    "4 1 0 0"
+  ]
+}

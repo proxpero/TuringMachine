@@ -1,0 +1,18 @@
+{
+  "blank" : "#",
+  "description" : "Accepts the input if there are an even number of a's.",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 R",
+    "2 Y",
+    "3 N"
+  ],
+  "title" : "Parity Decider",
+  "transitions" : [
+    "0 1 a a",
+    "0 2 # #",
+    "1 0 a a",
+    "1 3 # #"
+  ]
+}

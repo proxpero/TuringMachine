@@ -1,0 +1,31 @@
+{
+  "blank" : "#",
+  "description" : "Copy a tape of a's and b's, putting copy to the right of the tape containing the original sequence of a's and b's",
+  "start" : 1,
+  "states" : [
+    "0 L",
+    "1 L",
+    "2 R",
+    "3 R",
+    "4 R",
+    "5 R",
+    "6 R",
+    "7 L",
+    "8 Y"
+  ],
+  "title" : "Copy a string of a's and b's",
+  "transitions" : [
+    "0 1 # #",
+    "1 2 # #",
+    "2 3 a A",
+    "2 5 b B",
+    "2 7 # #",
+    "3 4 # #",
+    "4 0 # a",
+    "5 6 # #",
+    "6 0 # b",
+    "7 7 A a",
+    "7 7 B b",
+    "7 8 # #"
+  ]
+}

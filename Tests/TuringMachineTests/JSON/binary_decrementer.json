@@ -1,0 +1,14 @@
+{
+  "blank" : "#",
+  "description" : "Decrement one from a binary number.",
+  "start" : 0,
+  "states" : [
+    "0 L",
+    "1 Y"
+  ],
+  "title" : "Binary Decrementer",
+  "transitions" : [
+    "0 0 0 1",
+    "0 1 1 0"
+  ]
+}

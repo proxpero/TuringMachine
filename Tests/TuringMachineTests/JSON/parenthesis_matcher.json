@@ -1,0 +1,21 @@
+{
+  "blank" : "#",
+  "description" : "Accepts the input if it is a well-balanced sequence of parentheses.",
+  "start" : 0,
+  "states" : [
+    "0 R",
+    "1 L",
+    "2 L",
+    "3 Y",
+    "4 N"
+  ],
+  "title" : "Parenthesis Matcher",
+  "transitions" : [
+    "0 1 ) X",
+    "0 2 # #",
+    "1 0 ( X",
+    "1 4 # #",
+    "2 3 # #",
+    "2 4 ( ("
+  ]
+}

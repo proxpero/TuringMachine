@@ -1,0 +1,25 @@
+{
+  "blank" : "#",
+  "description" : "Accepts all strings of a's whose length is a power of 2 (including 2^0 = 1).",
+  "start" : 0,
+  "states" : [
+    "0 L",
+    "1 R",
+    "2 R",
+    "3 R",
+    "4 R",
+    "5 N",
+    "6 Y"
+  ],
+  "title" : "Power of 2 Decider",
+  "transitions" : [
+    "0 1 # #",
+    "1 2 a X",
+    "2 3 a a",
+    "2 6 # #",
+    "3 0 # #",
+    "3 4 a X",
+    "4 3 a a",
+    "4 5 # #"
+  ]
+}
